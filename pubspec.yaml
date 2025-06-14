@@ -42,6 +42,7 @@ dependencies:
   flutter_custom_carousel_slider: ^1.2.0
   another_carousel_pro: ^1.0.2
   smooth_page_indicator: ^1.2.1
+  http: ^1.4.0
 
 dev_dependencies:
   flutter_test:

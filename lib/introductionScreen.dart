@@ -33,13 +33,7 @@ class _IntroductionscreenState extends State<Introductionscreen> {
 
   ];
 
-  void _skip(){
-    _pageController.animateToPage(
-      _pages.length-1,
-      duration: Duration(milliseconds: 500),
-      curve: Curves.easeInOut
-    );
-  }
+
 
   void _onNext(){
     if(_currentIndex < _pages.length-1){
@@ -83,7 +77,7 @@ class _IntroductionscreenState extends State<Introductionscreen> {
                   backgroundColor: MaterialStateProperty.all(Colors.indigo[100]),
                   padding: MaterialStateProperty.all(EdgeInsets.symmetric(horizontal: 20))
               ),
-              onPressed: _skip,
+              onPressed: _onFinish,
               child: Text(
                 "Skip",
                 style: TextStyle(
